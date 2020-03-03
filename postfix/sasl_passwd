@@ -1,0 +1,2 @@
+[smtp.sendgrid.net]:587 apikey:<sendgrid_key>
+[smtp.example.com] user@smtp.example.com:password

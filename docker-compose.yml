@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  localsmtp:
+    image: hardikns/postfix-relay:latest
+    restart: always
+    volumes:
+      - ./postfix/sasl_passwd:/etc/postfix/sasl_passwd:Z
+    env_file:
+      - ./postfix/postfix.env

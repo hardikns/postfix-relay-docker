@@ -5,6 +5,6 @@ services:
     image: hardikns/postfix-relay:latest
     restart: always
     volumes:
-      - ./postfix/sasl_passwd:/etc/postfix/sasl_passwd:Z
+      - ./postfix/sasl_passwd:/etc/postfix/sasl_passwd_mount/sasl_passwd:Z
     env_file:
       - ./postfix/postfix.env
